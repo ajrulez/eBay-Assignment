@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">eBay Assignment</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="eqId_Label">ID</string>
+    <string name="magnitude_Label">Magnitude</string>
+    <string name="depth_Label">Depth</string>
+    <string name="location_Label">Location</string>
+    <string name="timestamp_Label">Timestamp</string>
+    <string name="close">Close</string>
+    <string name="error_title">Error</string>
+    <string name="error_no_earthquake_data">We were unable to retrieve Earthquake data at this time.\n\nPlease try again later.</string>
+    <string name="error_no_earthquake_location">We were unable to retrieve location for this earthquake.\n\nPlease try again later.</string>
+
+</resources>

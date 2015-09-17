@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tvEarthQuakeId"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="2dip"
+        android:layout_marginTop="2dip" />
+
+	<TextView
+        android:id="@+id/tvMagnitude"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvEarthQuakeId"
+        android:layout_alignBaseline="@+id/tvEarthQuakeId"
+        android:layout_marginLeft="2dip"
+        android:layout_marginTop="2dip" />
+	
+	<TextView
+        android:id="@+id/tvDepth"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvMagnitude"
+        android:layout_alignBaseline="@+id/tvMagnitude"
+        android:layout_marginLeft="2dip"
+        android:layout_marginTop="2dip" />
+	
+	<TextView
+        android:id="@+id/tvTimestamp"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvDepth"
+        android:layout_alignBaseline="@+id/tvDepth"
+        android:layout_marginLeft="2dip"
+        android:layout_marginTop="2dip" />	
+
+	<ImageView
+        android:id="@+id/ivLocationPin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="6dip"
+        android:layout_marginTop="2dip"
+        android:src="@drawable/location_pin"
+        android:contentDescription="@string/location_Label" />
+</RelativeLayout>

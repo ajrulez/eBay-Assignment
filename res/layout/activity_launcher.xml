@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="6dip"
+        android:layout_marginTop="6dip">
+        
+        <TextView
+            android:id="@+id/labelEarthQuakeId"
+            android:layout_width="80dip"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_alignParentTop="true"
+        	android:layout_marginLeft="2dip"
+        	android:layout_marginTop="2dip"
+        	android:textColor="@color/ButtonBar"
+        	android:textStyle="bold"
+        	android:text="@string/eqId_Label" />
+		
+		<TextView
+	        android:id="@+id/labelMagnitude"
+	        android:layout_width="80dip"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/labelEarthQuakeId"
+	        android:layout_alignBaseline="@+id/labelEarthQuakeId"
+	        android:layout_marginLeft="2dip"
+	        android:layout_marginTop="2dip"
+	        android:textColor="@color/ButtonBar"
+        	android:textStyle="bold"
+	        android:text="@string/magnitude_Label" />
+	
+		<TextView
+	        android:id="@+id/labelDepth"
+	        android:layout_width="50dip"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/labelMagnitude"
+	        android:layout_alignBaseline="@+id/labelMagnitude"
+	        android:layout_marginLeft="2dip"
+	        android:layout_marginTop="2dip"
+	        android:textColor="@color/ButtonBar"
+        	android:textStyle="bold"
+	        android:text="@string/depth_Label" />
+		
+		<TextView
+		    android:id="@+id/labelLocation"
+		    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignBaseline="@+id/labelDepth"
+	        android:layout_marginRight="6dip"
+	        android:layout_marginTop="2dip"
+	        android:textColor="@color/ButtonBar"
+        	android:textStyle="bold"
+	        android:text="@string/location_Label" />
+	
+		<TextView
+	        android:id="@+id/labelTimestamp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/labelEarthQuakeId"
+	        android:layout_marginLeft="2dip"
+	        android:layout_marginTop="6dip"
+	        android:textColor="@color/Facebook"
+        	android:textStyle="bold"
+	        android:text="@string/timestamp_Label" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lvEarthquakes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="6dip"
+        android:layout_marginTop="4dip">
+        
+    </ListView>
+</RelativeLayout>
